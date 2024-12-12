@@ -1,0 +1,141 @@
+/* Для планшета */
+
+@media(max-width:1080px) {
+
+    header {
+        border-bottom-right-radius: 60px;
+        margin-bottom: 40px;
+    }
+
+    .header-row {
+        column-gap: 30px;
+    }
+
+    .header-row img {
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .header-text p {
+        font-size: 22px;
+    }
+
+    .portfolio h2 {
+        font-size: 42px;
+    }
+
+    .portfolio h2,
+    h4 {
+        font-size: 42px;
+    }
+
+    article img {
+        border-radius: 30px;
+    }
+
+    article h3 {
+        font-size: 16px;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+
+    .kontakt {
+        padding-bottom: 20px;
+        padding-top: 40px;
+        border-top-left-radius: 60px;
+    }
+
+    h4 {
+        margin-bottom: 30px;
+    }
+
+    .Podval {
+        font-size: 12px;
+    }
+
+    .Podval2 {
+        font-size: 12px;
+    }
+
+    .kontakt-btns {
+        font-size: 16px;
+    }
+
+    .Store h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    .Description {
+        margin-bottom: 20px;
+    }
+
+    .link {
+        margin-bottom: 20px;
+    }
+
+    .PictureWebsite {
+        margin-bottom: 45px;
+    }
+
+    .Back {
+        margin-bottom: 45px;
+    }
+
+    .BackMainPage {
+        padding: 25px 125px 25px 125px;
+    }
+}
+
+/* Для телефона */
+
+@media(max-width:767px) {
+    header {
+        padding-bottom: 40px;
+        padding-top: 20px;
+        border-bottom-right-radius: 60px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .header-text p {
+        font-size: 18px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+
+    .header-row img {
+        max-width: 100%;
+    }
+
+    .kontakt-btns {
+        flex-direction: column;
+    }
+
+    .portfolio h2,
+    h4 {
+        font-size: 28px;
+    }
+
+    .PictureWebsite {
+        margin-bottom: 40px;
+    }
+
+    .Back {
+        margin-bottom: 40px;
+    }
+
+    .BackMainPage {
+        padding: 20px 55px 20px 55px;
+    }
+}

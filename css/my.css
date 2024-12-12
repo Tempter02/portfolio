@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* База */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+/* Навигация */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(23, 50, 66, 0.65);
+    z-index: 4;
+    user-select: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 15px 0px;
+
+}
+
+.navigation a {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in;
+}
+
+.navigation:hover a:hover {
+    color: #1782cf;
+}
+
+/* розмытие нав. */
+
+.navigation:hover a {
+    filter: blur(15px);
+}
+
+.navigation:hover a:hover {
+    filter: blur(0px);
+    color: #28a1f8;
+}
+
+/* Шапка */
+header {
+    position: relative;
+    background: linear-gradient(-43deg, #252525, #2f2f2f);
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-bottom-right-radius: 100px;
+    margin-bottom: 80px;
+}
+
+.heder-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-right-radius: 55px;
+    opacity: 0.5;
+}
+
+header .container {
+    position: relative;
+    z-index: 3;
+}
+
+.header-row {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.header-row img {
+    border-radius: 80px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header-text p {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    color: #ffffff;
+}
+
+.header-btns {
+    display: flex;
+    column-gap: 20px;
+}
+
+.btn {
+    height: 48px;
+    padding: 15px 25px 0px 25px;
+    background-color: black;
+    border-radius: 8px;
+    color: #ffffff;
+    line-height: 1;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: #1782cf;
+}
+
+.btn-two {
+    height: 48px;
+    padding: 15px 25px 0px 25px;
+    border: 1px solid #3b3b3b;
+    border-radius: 8px;
+    color: #ffffff;
+    line-height: 1;
+    transition: all 0.2s ease-in;
+}
+
+.btn-two:hover {
+    border-color: #1782cf;
+}
+
+/* Портфолио */
+
+.portfolio h2 {
+    margin-bottom: 65px;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    text-align: center;
+}
+
+article img {
+    margin-bottom: 30px;
+    transform: opacity 0.2s ease-in;
+}
+
+article img:hover {
+    opacity: 0.8;
+}
+
+article h3 {
+    font-size: 22px;
+    margin-bottom: 70px;
+    text-decoration: underline;
+}
+
+article a {
+    color: black;
+}
+
+/* Контакты */
+.kontakt {
+    background: #252525;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-top-left-radius: 100px;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.kontakt-btns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.kontakt-btns .telegram {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    padding: 58px 70px 58px 20px;
+    border: 1px solid #3b3b3b;
+    border-radius: 20px;
+    color: #ffffff;
+    line-height: 1;
+    transition: all 0.2s ease-in;
+    margin-bottom: 20px;
+}
+
+.kontakt-btns .telegram:hover {
+    background: linear-gradient(-32deg, #0078b3, #16abf4);
+}
+
+.TG {
+    color: #ffffff;
+    padding: 0px 0px 0px 15px;
+}
+
+.kontakt-btns .WhatsApp {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    padding: 58px 45px 58px 20px;
+    border: 1px solid #3b3b3b;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    line-height: 1;
+    transition: all 0.2s ease-in;
+    margin-bottom: 20px;
+}
+
+.kontakt-btns .WhatsApp:hover {
+    background: linear-gradient(-32deg, #2b9f41, #55cd6c);
+}
+
+.WA {
+    color: #ffffff;
+    padding: 0px 0px 0px 15px;
+}
+
+.kontakt-btns .Vkontakte {
+    display: flex;
+    align-items: center;
+    height: 140px;
+    padding: 58px 70px 58px 20px;
+    border: 1px solid #3b3b3b;
+    border-radius: 20px;
+    color: #ffffff;
+    line-height: 1;
+    transition: all 0.2s ease-in;
+    margin-bottom: 20px;
+}
+
+.kontakt-btns .Vkontakte:hover {
+    background: linear-gradient(-32deg, #305883, #5086c0);
+}
+
+.VK {
+    color: #ffffff;
+    padding: 0px 0px 0px 15px;
+}
+
+/* Подвал */
+footer {
+    background: #1e1e1e;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.Podval {
+    text-align: center;
+    color: #5d5d5d;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.Podval2 {
+    text-align: center;
+    color: #5886A8;
+    font-size: 14px;
+}
+
+/* Сайты */
+.Store {
+    text-align: center;
+    align-items: center;
+}
+
+.Store h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-top: 80px;
+}
+
+.Description {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+.link {
+    margin-bottom: 40px;
+}
+
+.pInkine {
+    display: inline;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.PictureWebsite {
+    margin-bottom: 70px;
+}
+
+.Back {
+    margin-bottom: 70px;
+}
+
+.BackMainPage {
+    color: #000;
+    background-color: #f1f1f1;
+    padding: 30px 295px 30px 295px;
+}
